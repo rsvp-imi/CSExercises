@@ -26,8 +26,8 @@ namespace CSExercises
         public static int square(int x)
         {
 
-             //PUT YOUR CODE HERE
-
+            //PUT YOUR CODE HERE
+            Console.Write("square of your Input is ");
             return (x*x);
         }
     }
