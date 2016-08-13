@@ -20,12 +20,19 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Input any number with decimals");
             string inputStr = Console.ReadLine();
             double inputDbl = Convert.ToDouble(inputStr);
 
+            Console.WriteLine("{0:0.0#}",inputDbl);
+        }
+
+          
+
+            
             //YOUR CODE HERE
 
-        }
+        
 
     }
 }
