@@ -16,13 +16,21 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.WriteLine("Input distance travelled");
+
+            string Dt = Console.ReadLine();
+            double D = Convert.ToDouble(Dt);
+
+            double Ft = (2.40 + (D * 0.40));
+            double TFare = Math.Ceiling(Ft*10)/10.0;
+
+            Console.WriteLine("Total fare is {0:C}", Fare(TFare)); //YOUR CODE HERE
         }
 
-        public static double CalculateFare(double distance)
+        public static double Fare(double F)
         {
             //YOUR CODE HERE
-            return 0;
+            return (F);
 
         }
     }

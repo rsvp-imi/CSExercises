@@ -21,10 +21,10 @@ namespace CSExercises
             Console.WriteLine("Input Pay");
             string Str = Console.ReadLine();
             decimal Pay = Convert.ToDecimal(Str);
-            
+
+            decimal Gross = (Pay * 3 / 100);
                                    
-           Console.WriteLine("Total Salary earned is {0:C}", (percent(Pay)+
-               (percent(Pay)*3/100)+ (percent(Pay)*10/100)));
+           Console.WriteLine("Total Salary earned is {0:C}", percent(Gross));
 
         }
 
