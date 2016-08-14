@@ -19,14 +19,33 @@ namespace CSExercises
 
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.WriteLine("Input the length of sides a, b, and c");
 
+            string a1 = Console.ReadLine();
+            double a = Convert.ToDouble(a1);
+            string b1 = Console.ReadLine();
+            double b = Convert.ToDouble(b1);
+            string c2 = Console.ReadLine();
+            double c = Convert.ToDouble(c2);
+                           
+            double side = (a + b + c) / 2;
+
+            if (side < c)
+                Console.WriteLine("The input lenghts are invalid. AREA cannot be calculated");
+
+            double A = Math.Sqrt(side * (side - a) * (side - b) * (side - c));
+
+                                 
+            
+            Console.WriteLine("The AREA of the Triangle is {0:0.#}", AREA(A));
+
+            //YOUR CODE HERE
         }
 
-        public static double CalculateArea(double a, double b, double c)
+        public static double AREA(double R)
         {
             //YOUR CODE HERE
-            return 0;
+            return (R);
         }
     }
 }
