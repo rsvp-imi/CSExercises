@@ -20,7 +20,7 @@ namespace CSExercises
         {
             Console.WriteLine("Input Pay");
             string Str = Console.ReadLine();
-            double Pay = Convert.ToDouble(Str);
+            decimal Pay = Convert.ToDecimal(Str);
             
                                    
            Console.WriteLine("Total Salary earned is {0:C}", (percent(Pay)+
@@ -28,7 +28,7 @@ namespace CSExercises
 
         }
 
-        public static double percent(double Salary)
+        public static decimal percent(decimal Salary)
         {
             return (Salary);
         }
