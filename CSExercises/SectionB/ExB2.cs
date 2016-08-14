@@ -20,15 +20,19 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.WriteLine("Input any number");
+            string Str = Console.ReadLine();
+            double Dbl = Convert.ToDouble(Str);
+
+            double SqrDbl = Math.Sqrt(Dbl);
+
+            Console.WriteLine("{0:0.00#}",sqroot(SqrDbl));
         }
 
-        public static string SQRT(double x)
+        public static double sqroot(double x)
         {
-            //YOUR CODE HERE: return the square root of x and then use String.Format 
-            //to format it. The format is similar to WriteLine
-            return null;
-
+            return (x);
         }
     }
 }
+
