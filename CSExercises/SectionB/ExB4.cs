@@ -14,7 +14,7 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Input Temperatue");
+            Console.WriteLine("Input Temperatue in Celsius");
             string C = Console.ReadLine();
             double Temp = Convert.ToDouble(C);
 
