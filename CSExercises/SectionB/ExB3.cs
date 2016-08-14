@@ -18,14 +18,20 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.WriteLine("Input Pay");
+            string Str = Console.ReadLine();
+            double Pay = Convert.ToDouble(Str);
+            
+                                   
+           Console.WriteLine("Total Salary earned is {0:C}", (percent(Pay)+
+               (percent(Pay)*3/100)+ (percent(Pay)*10/100)));
 
         }
 
-        public static string CalculateIncome(string salaryStr)
+        public static double percent(double Salary)
         {
-            //YOUR CODE HERE
-            return null;
+            return (Salary);
         }
     }
 }
+
