@@ -13,24 +13,25 @@ namespace CSExercises
     //and requires your ingenuity
 
     public class ExB9
-    {
+    {        
         public static void Main(string[] args)
         {
             Console.WriteLine("Input distance travelled");
 
             string Dt = Console.ReadLine();
-            double D = Convert.ToDouble(Dt);
+            double distance = Convert.ToDouble(Dt);
 
-            double Ft = (2.40 + (D * 0.40));
-            double TFare = Math.Ceiling(Ft*10)/10.0;
+            double fare = Fare(distance);
+            Console.WriteLine("Total fare is {0:C}", fare); //YOUR CODE HERE
 
-            Console.WriteLine("Total fare is {0:C}", Fare(TFare)); //YOUR CODE HERE
         }
 
-        public static double Fare(double F)
+        public static double Fare(double distance)
         {
-            //YOUR CODE HERE
-            return (F);
+            double Ft = (2.40 + (distance * 0.40));
+            double TFare = Math.Ceiling(Ft * 10) / 10.0;
+
+            return (TFare);
 
         }
     }
