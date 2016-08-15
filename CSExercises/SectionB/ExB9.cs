@@ -19,9 +19,9 @@ namespace CSExercises
             Console.WriteLine("Input distance travelled");
 
             string Dt = Console.ReadLine();
-            double D = Convert.ToDouble(Dt);
+            double distance = Convert.ToDouble(Dt);
 
-            double fare = Fare(D);
+            double fare = Fare(distance);
             Console.WriteLine("Total fare is {0:C}", fare); //YOUR CODE HERE
             
         }
