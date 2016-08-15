@@ -13,7 +13,7 @@ namespace CSExercises
     //and requires your ingenuity
 
     public class ExB9
-    {        
+    {
         public static void Main(string[] args)
         {
             Console.WriteLine("Input distance travelled");
@@ -23,7 +23,7 @@ namespace CSExercises
 
             double fare = Fare(distance);
             Console.WriteLine("Total fare is {0:C}", fare); //YOUR CODE HERE
-
+            
         }
 
         public static double Fare(double distance)
