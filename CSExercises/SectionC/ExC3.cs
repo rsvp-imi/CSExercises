@@ -29,7 +29,6 @@ namespace CSExercises
 
         else
             Console.WriteLine("You scored {0} marks which is {1} grade.", mark, grade);
-
         }
     
     public static string CalculateGrade(int mark)
@@ -48,8 +47,7 @@ namespace CSExercises
     else if (mark >= 0 && mark<=39)
     { grade = "F"; }
     
-
-   return grade;
+        return grade;
         }
     }
 }
