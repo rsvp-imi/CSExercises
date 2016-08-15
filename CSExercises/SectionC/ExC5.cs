@@ -17,15 +17,38 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            Console.WriteLine("Input three digits");
+            int digits = Convert.ToInt32(Console.ReadLine());
+                              
+            bool Status = IsArmstrongNumber(digits);
+            
 
+            Console.WriteLine("Is an Armstrong Number {0}", Status);
+            
+            //YOUR CODE HERE
         }
-
-
-        public static bool IsArmstrongNumber(int n)
+        
+        public static bool IsArmstrongNumber(int digits)
         {
+            int x = digits/100;
+            int y = digits%100/10;
+            int z = digits%;
+            bool result;
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(z);
+
+
+            if ((Math.Pow (x,3))+ (Math.Pow(y,3))+ (Math.Pow(z,3))== digits)
+            { result = true; }
+
+            else
+            { result = false; }
+
+
             //YOUR CODE HERE
-            return false;
+            return result;
 
         }
     }
