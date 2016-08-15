@@ -21,16 +21,17 @@ namespace CSExercises
             string Dt = Console.ReadLine();
             double D = Convert.ToDouble(Dt);
 
-            double Ft = (2.40 + (D * 0.40));
-            double TFare = Math.Ceiling(Ft*10)/10.0;
-
-            Console.WriteLine("Total fare is {0:C}", Fare(TFare)); //YOUR CODE HERE
+            double fare = Fare(D);
+            Console.WriteLine("Total fare is {0:C}", fare); //YOUR CODE HERE
+            
         }
 
-        public static double Fare(double F)
+        public static double Fare(double distance)
         {
-            //YOUR CODE HERE
-            return (F);
+            double Ft = (2.40 + (distance * 0.40));
+            double TFare = Math.Ceiling(Ft * 10) / 10.0;
+
+            return (TFare);
 
         }
     }
