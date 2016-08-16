@@ -45,7 +45,7 @@ namespace CSExercises
            //       break;
           //        }
            //   }
-           //   return true;     
+           //   return true;     <<-- this is wrong as it should be return IsPrime and not return true
 
                 if (n < 2)
             {
@@ -63,16 +63,6 @@ namespace CSExercises
             }
             return isPrime;
 
-                  // int boundary = (int)Math.Floor(Math.Sqrt(n));
-
-                  //    if (n == 1) return false;
-                  //  if (n == 2) return true;
-
-                  // for (int i = 2; i <= boundary; ++i)  {
-                  //  if (n % i == 0)  return false;
-                  //   }
-              // return true;     
-                   
 }
 
 
