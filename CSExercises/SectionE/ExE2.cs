@@ -22,7 +22,25 @@ namespace CSExercises
     {
         public static void Main(string[] args)
         {
-            //YOUR CODE HERE
+            string Number = "";
+            string Inverse = "";
+            string SquareRoot = "";
+            string Square = "";
+
+            Console.WriteLine("Number{0,5} Inverse{0,0} Square Root{0,1} Sqaure{0,1}", Number, Inverse, SquareRoot, Square);
+
+            double No;
+
+            for (No = 1; No <= 10; No++)
+            {
+                double Inv = (1 / No);
+                double Sqrt = Math.Sqrt(No);
+                double Sqr = Math.Pow(No, 2);
+
+                Console.WriteLine("{0,5:0.00#} {1,10:0.00#} {2,10:0.00#} {3,10:0.00#}", No, Inv, Sqrt, Sqr);
+            }
+
+            
         }
     }
 }
