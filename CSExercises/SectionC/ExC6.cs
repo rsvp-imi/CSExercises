@@ -27,18 +27,55 @@ namespace CSExercises
 
     public class ExC6
     {
-        public static void Main(string[] args)
+       public static void Main(string[] args)
         {
-            //YOUR CODE HERE - get user input, call the function and return the discounted price
+            Console.WriteLine("Input Qty for TV");
+            int tvQty = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Input Qty for DVD");
+            int dvdQty = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Input Qty for MP3");
+            int mp3Qty = Convert.ToInt32(Console.ReadLine());
 
+            int TV = 900;
+            int DVD = 500;
+            int MP3 = 700;
+
+            int TotalCost = (TV * tvQty) + (DVD * dvdQty) + (MP3 * mp3Qty);
+
+          if (TotalCost > 5000)
+            {
+                double discount = CalculateDiscount(TotalCost);
+
+                Console.WriteLine("Your Total Price of order is {0} and after discount is {1}.", TotalCost, discount); }
+
+            else
+            {
+                Console.WriteLine("Your total cost is {0:C}, no discount.", TotalCost);
+            }
         }
-
-        public static double CalculateTotalPrice(int tvQty, int dvdQty, int mp3Qty)
+        
+        public static double CalculateDiscount(int tvQty, int dvdQty, int mp3Qty)
         {
-            //YOUR CODE HERE
-            return 0;
+           int TV = 900;
+            int DVD = 500;
+            int MP3 = 700;
+
+            int TotalCost = (TV * tvQty) + (DVD * dvdQty) + (MP3 * mp3Qty);
+
+            double D1 = 10 / 100;
+            double D2 = 15 / 100;
+
+
+            if (TotalCost > 5000 && TotalCost <= 10000)
+            { discount = D1 * TotalCost; }
+
+            else if (TotalCost > 10000)
+            { discount = D2 * TotalCost; }
+
+                //YOUR CODE HERE
+                return discount;
 
 
 

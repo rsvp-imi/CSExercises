@@ -34,12 +34,7 @@ namespace CSExercises
             int y = digits%100/10;
             int z = digits%10;
             bool result;
-
-            Console.WriteLine(x);
-            Console.WriteLine(y);
-            Console.WriteLine(z);
-
-
+            
             if ((Math.Pow (x,3))+ (Math.Pow(y,3))+ (Math.Pow(z,3))== digits)
             { result = true; }
 
