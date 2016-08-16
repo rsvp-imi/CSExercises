@@ -46,9 +46,9 @@ namespace CSExercises
 
           if (TotalCost > 5000)
             {
-                double discount = CalculateDiscount(TotalCost);
+                double TotalPrice = CalculateDiscount(tvQty,dvdQty,mp3Qty);
 
-                Console.WriteLine("Your Total Price of order is {0} and after discount is {1}.", TotalCost, discount); }
+                Console.WriteLine("Your total cost of the order is {0:C} and after discount total price {1:C}.", TotalCost, TotalPrice); }
 
             else
             {
@@ -58,24 +58,24 @@ namespace CSExercises
         
         public static double CalculateDiscount(int tvQty, int dvdQty, int mp3Qty)
         {
-           int TV = 900;
+            int TV = 900;
             int DVD = 500;
             int MP3 = 700;
 
             int TotalCost = (TV * tvQty) + (DVD * dvdQty) + (MP3 * mp3Qty);
 
-            double D1 = 10 / 100;
-            double D2 = 15 / 100;
+            int DiscountPrice = (TV*tvQty)+ (DVD*dvdQty);
 
+           double TotalPrice = 0;
 
-            if (TotalCost > 5000 && TotalCost <= 10000)
-            { discount = D1 * TotalCost; }
+            if (TotalCost >= 5000 && TotalCost <= 10000)
+            { TotalPrice = (DiscountPrice - (10 * DiscountPrice) / 100)  +(MP3 * mp3Qty); }
 
             else if (TotalCost > 10000)
-            { discount = D2 * TotalCost; }
+            { TotalPrice = (DiscountPrice - (15 * DiscountPrice) / 100) + (MP3 * mp3Qty); }
 
                 //YOUR CODE HERE
-                return discount;
+                return TotalPrice;
 
 
 
