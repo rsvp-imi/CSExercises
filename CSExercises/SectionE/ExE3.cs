@@ -19,38 +19,60 @@ namespace CSExercises
         {
             Console.Write("Please enter an integer: ");
             int n = Convert.ToInt32(Console.ReadLine());
-
-            if (n%2 !=0)
-            { Console.WriteLine("Prime"); }
-
-            else
-                {
-                Console.WriteLine("Not Prime");
-            }
+                       
                    
-           // if (IsPrime(n))
-            //{
-           //     Console.WriteLine("Prime");
-           // }
-           // else
-           // {
-             //   Console.WriteLine("Not Prime");
-           // }
-       // }
+        if (IsPrime(n))
+          {
+              Console.WriteLine("Prime");
+            }
+         else
+          {
+               Console.WriteLine("Not Prime");
+          }
+       }
 
-       // public static bool IsPrime(int n)
-            // {
+       public static bool IsPrime(int n)
+          {
+       //    {
+     //          if n = 2
 
-            //int boundary = (int)Math.Floor(Math.Sqrt(n));
+    //   }
+        //      bool isPrime = true;
+        //      for (int i = 2; i <= n - 1; i++ )
+         //     {
+           //       if (n % i == 0)
+           //       { isPrime = false;
+           //       break;
+          //        }
+           //   }
+           //   return true;     
 
-            //if (n == 1) return false;
-            //if (n == 2) return true;
+                if (n < 2)
+            {
+                return false;
+            }
 
-    //for (int i = 2; i <= boundary; ++i)  {
-      //  if (n % i == 0)  return false;
-            //}
+            bool isPrime = true;
+            for (int i = 2; i <= n - 1; i++)
+            {
+                if (n % i == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+            return isPrime;
 
-            //return true;        
+                  // int boundary = (int)Math.Floor(Math.Sqrt(n));
+
+                  //    if (n == 1) return false;
+                  //  if (n == 2) return true;
+
+                  // for (int i = 2; i <= boundary; ++i)  {
+                  //  if (n % i == 0)  return false;
+                  //   }
+              // return true;     
+                   
 }
 
 
