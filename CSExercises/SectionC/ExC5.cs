@@ -32,7 +32,7 @@ namespace CSExercises
         {
             int x = digits/100;
             int y = digits%100/10;
-            int z = digits%;
+            int z = digits%10;
             bool result;
 
             Console.WriteLine(x);
