@@ -20,23 +20,40 @@ namespace CSExercises
             Console.Write("Please enter an integer: ");
             int n = Convert.ToInt32(Console.ReadLine());
 
+            if (n%2 !=0)
+            { Console.WriteLine("Prime"); }
 
-            if (IsPrime(n))
-            {
-                Console.WriteLine("Prime");
-            }
             else
-            {
+                {
                 Console.WriteLine("Not Prime");
             }
-        }
+                   
+           // if (IsPrime(n))
+            //{
+           //     Console.WriteLine("Prime");
+           // }
+           // else
+           // {
+             //   Console.WriteLine("Not Prime");
+           // }
+       // }
 
-        public static bool IsPrime(int n)
-        {
-            //YOUR CODE HERE
-            return false;
+       // public static bool IsPrime(int n)
+            // {
+
+            //int boundary = (int)Math.Floor(Math.Sqrt(n));
+
+            //if (n == 1) return false;
+            //if (n == 2) return true;
+
+    //for (int i = 2; i <= boundary; ++i)  {
+      //  if (n % i == 0)  return false;
+            //}
+
+            //return true;        
+}
 
 
         }
     }
-}
+
