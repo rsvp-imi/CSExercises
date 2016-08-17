@@ -20,7 +20,7 @@ namespace CSExercises
 
             //Console.WriteLine (ExE3.IsPrime(n));
 
-            for (int n = 5; n<=1000; n++)
+            for (int n = 5; n<=10000; n++)
 
                 {
                     int sum = 0;
