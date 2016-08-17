@@ -32,7 +32,7 @@ namespace CSExercises
         {
             int Inc = 1;
 
-            for (int d = 1; d <=n; d++ )
+            for (int d = 1; d <=n; d++ ) // d increases from 1 to the 'n'
             {
                 Inc = d * Inc;
             }
@@ -45,10 +45,11 @@ namespace CSExercises
         {
             int Dec = 1;
 
-            for (int digit = n; digit>= 1; digit-- )
+            for (int digit = n; digit >= 1; digit--) // d decreases from the 'n' till 1
+                
             {
                 Dec = digit * Dec;
-            }
+              }
                 //YOUR CODE HERE
                 return Dec;
 
