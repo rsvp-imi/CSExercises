@@ -54,15 +54,7 @@ namespace CSExercises
             Console.WriteLine("Minimum Sales: "+ MinMonth(MSales));
             Console.WriteLine("Avg Sales: {0:C}", AvgSales(MSales));
       }
-
-
-        public static void CalculateMinMaxAvg(int[] sales, ref int minMonth, ref int maxMonth, ref double avg)
-        {
-            //YOUR CODE HERE
-            //Assign the result to minMonth, maxMonth and avg variable/parameter accordingly
-            
-
-        }
+                    
 
         public static int MinMonth(int[] MSales)
         {
